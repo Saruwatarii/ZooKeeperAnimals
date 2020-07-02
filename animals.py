@@ -1,3 +1,9 @@
+'''
+This progam is made in order to help the zookeeper check on hte animals and see if they are well.
+It will take an input (command from the zoo staff) and show the animals on the monitor
+'''
+
+# Store the animals in string variables
 camel = """
 Switching on camera from habitat with camels...
  ___.-''''-.
@@ -119,18 +125,20 @@ Switching on camera from habitat with rabbits...
 (" ~----( ~   Y.  )
 It seems there will be more rabbits soon!"""
 
+# As long as the zoo staff does not write "exit", the program will continue to ask about the animals.
 while True:
     habitat = input("Which habitat # do you need? ")
-
+    # when the zoo staff input exit, the while loop will stop and jump to the next line after the while loop
     if habitat == "exit":
         break
-
+    # Put the animals inside a list in order to index the animals.
+    # Since input is original a str, int() have been used for converting it into number to use for indexing the list
     animals = [camel, lion, deer, goose, bat, rabbit]
     animal = animals[int(habitat)]
-
+    # Printing out the animal on the monitor
     print(animal)
 
 
-
+# Print out a goodbye message
 print("See you!!")
 
