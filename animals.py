@@ -1,6 +1,7 @@
 '''
-This progam is made in order to help the zookeeper check on hte animals and see if they are well.
+This program is made in order to help the zookeeper check on hte animals and see if they are well.
 It will take an input (command from the zoo staff) and show the animals on the monitor
+The user will use the number as an index of the habitat to print its content.
 '''
 
 # Store the animals in string variables
